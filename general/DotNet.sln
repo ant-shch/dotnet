@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExecuteMethodInSeperateDomain", "ExecuteMethodInSeperateDomain\ExecuteMethodInSeperateDomain.csproj", "{FE0814D5-A3C0-41AC-AD40-CE36FA5E6442}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExecuteMethodInSeperateDomain", "ExecuteMethodInSeperateDomain", "{51FB1215-299E-46C1-BD8D-F83570A209DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LoadAssemblyToDomainAndExecute", "LoadAssemblyToDomainAndExecute", "{27A3F63F-B761-4077-B626-257FD32EA884}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoadAssemblyToDomainAndExecute.Worker.Bob", "LoadAssemblyToDomainAndExecute\LoadAssemblyToDomainAndExecute.Worker.Bob\LoadAssemblyToDomainAndExecute.Worker.Bob.csproj", "{E6FD8954-4B16-4A69-BBD3-EBEDC8D335F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoadAssemblyToDomainAndExecute.Worker.Joseph", "LoadAssemblyToDomainAndExecute\LoadAssemblyToDomainAndExecute.Worker.Joseph\LoadAssemblyToDomainAndExecute.Worker.Joseph.csproj", "{26BBB8D9-79EE-402C-AD92-CC18C0E639AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoadAssemblyToDomainAndExecute.Master", "LoadAssemblyToDomainAndExecute\LoadAssemblyToDomainAndExecute.Master\LoadAssemblyToDomainAndExecute.Master.csproj", "{A0F8AAF7-7952-45A2-89E8-EAB32405142F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoadAssemblyToDomainAndExecute.Bootstrap", "LoadAssemblyToDomainAndExecute\LoadAssemblyToDomainAndExecute.Bootstrap\LoadAssemblyToDomainAndExecute.Bootstrap.csproj", "{AAA379C9-31FE-4F90-AB5A-B4CDB8A82A95}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExceptionHandling", "ExceptionHandling", "{842157EF-BF03-4D11-800B-3417AF916D86}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LockThreadInCatchBlock", "LockThreadInCatchBlock", "{45542AC8-DC13-4E0F-9780-52FB7C2B194B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LockInCatchStatament", "ExceptionsHandling\LockInCatchStatament\LockInCatchStatament.csproj", "{604BAC1A-B564-4BAE-80AD-76794592F9B6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReferenceType", "ReferenceType", "{E0CDF489-CB5F-4E52-A93B-E8260723833A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CopyReferenceToStack", "CopyReferenceToStack", "{FC34EEC7-E293-4EEE-A58A-5D2F9BECFE6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CopyReferenceToStack", "ReferenceType\CopyReferenceToStack\CopyReferenceToStack.csproj", "{654AA8D2-F46B-4A18-8B91-796F73E99E12}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE0814D5-A3C0-41AC-AD40-CE36FA5E6442}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE0814D5-A3C0-41AC-AD40-CE36FA5E6442}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE0814D5-A3C0-41AC-AD40-CE36FA5E6442}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE0814D5-A3C0-41AC-AD40-CE36FA5E6442}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6FD8954-4B16-4A69-BBD3-EBEDC8D335F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6FD8954-4B16-4A69-BBD3-EBEDC8D335F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6FD8954-4B16-4A69-BBD3-EBEDC8D335F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6FD8954-4B16-4A69-BBD3-EBEDC8D335F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26BBB8D9-79EE-402C-AD92-CC18C0E639AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26BBB8D9-79EE-402C-AD92-CC18C0E639AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26BBB8D9-79EE-402C-AD92-CC18C0E639AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26BBB8D9-79EE-402C-AD92-CC18C0E639AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0F8AAF7-7952-45A2-89E8-EAB32405142F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0F8AAF7-7952-45A2-89E8-EAB32405142F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0F8AAF7-7952-45A2-89E8-EAB32405142F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0F8AAF7-7952-45A2-89E8-EAB32405142F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAA379C9-31FE-4F90-AB5A-B4CDB8A82A95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAA379C9-31FE-4F90-AB5A-B4CDB8A82A95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAA379C9-31FE-4F90-AB5A-B4CDB8A82A95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAA379C9-31FE-4F90-AB5A-B4CDB8A82A95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{604BAC1A-B564-4BAE-80AD-76794592F9B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{604BAC1A-B564-4BAE-80AD-76794592F9B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{604BAC1A-B564-4BAE-80AD-76794592F9B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{604BAC1A-B564-4BAE-80AD-76794592F9B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{654AA8D2-F46B-4A18-8B91-796F73E99E12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{654AA8D2-F46B-4A18-8B91-796F73E99E12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{654AA8D2-F46B-4A18-8B91-796F73E99E12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{654AA8D2-F46B-4A18-8B91-796F73E99E12}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FE0814D5-A3C0-41AC-AD40-CE36FA5E6442} = {51FB1215-299E-46C1-BD8D-F83570A209DA}
+		{E6FD8954-4B16-4A69-BBD3-EBEDC8D335F5} = {27A3F63F-B761-4077-B626-257FD32EA884}
+		{26BBB8D9-79EE-402C-AD92-CC18C0E639AB} = {27A3F63F-B761-4077-B626-257FD32EA884}
+		{A0F8AAF7-7952-45A2-89E8-EAB32405142F} = {27A3F63F-B761-4077-B626-257FD32EA884}
+		{AAA379C9-31FE-4F90-AB5A-B4CDB8A82A95} = {27A3F63F-B761-4077-B626-257FD32EA884}
+		{45542AC8-DC13-4E0F-9780-52FB7C2B194B} = {842157EF-BF03-4D11-800B-3417AF916D86}
+		{604BAC1A-B564-4BAE-80AD-76794592F9B6} = {45542AC8-DC13-4E0F-9780-52FB7C2B194B}
+		{FC34EEC7-E293-4EEE-A58A-5D2F9BECFE6B} = {E0CDF489-CB5F-4E52-A93B-E8260723833A}
+		{654AA8D2-F46B-4A18-8B91-796F73E99E12} = {FC34EEC7-E293-4EEE-A58A-5D2F9BECFE6B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {98A611E8-28D0-4EF1-9947-71DA2190B828}
+	EndGlobalSection
+EndGlobal
