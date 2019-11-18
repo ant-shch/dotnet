@@ -54,7 +54,7 @@ There are a few other generally useful categories, depending on your application
 
 # Performance optimization
 #### Approach
-![Performance optimization process](https://github.com/khdevnet/performance-optimization/blob/master/docs/Performance-approach.png)
+![Performance optimization process](https://github.com/khdevnet/dotnet/performance/blob/master/resources/Performance-approach.png)
 * Non-functional requirements
 * Performance reflects in architecture
 * Develop with real data
