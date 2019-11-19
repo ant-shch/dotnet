@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2010
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29020.237
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExecuteMethodInSeperateDomain", "ExecuteMethodInSeperateDomain\ExecuteMethodInSeperateDomain.csproj", "{FE0814D5-A3C0-41AC-AD40-CE36FA5E6442}"
 EndProject
@@ -28,6 +28,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CopyReferenceToStack", "CopyReferenceToStack", "{FC34EEC7-E293-4EEE-A58A-5D2F9BECFE6B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CopyReferenceToStack", "ReferenceType\CopyReferenceToStack\CopyReferenceToStack.csproj", "{654AA8D2-F46B-4A18-8B91-796F73E99E12}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PinnedObjects", "PinnedObjects", "{5EC57555-34A6-4F20-BCB1-7F4DBC28746E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PinnedObjects", "PinnedObjects\PinnedObjects.csproj", "{F5AF71F9-9DEB-4302-A34B-AF73FFC6A3A1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +67,10 @@ Global
 		{654AA8D2-F46B-4A18-8B91-796F73E99E12}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{654AA8D2-F46B-4A18-8B91-796F73E99E12}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{654AA8D2-F46B-4A18-8B91-796F73E99E12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5AF71F9-9DEB-4302-A34B-AF73FFC6A3A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5AF71F9-9DEB-4302-A34B-AF73FFC6A3A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5AF71F9-9DEB-4302-A34B-AF73FFC6A3A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5AF71F9-9DEB-4302-A34B-AF73FFC6A3A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -77,6 +85,7 @@ Global
 		{604BAC1A-B564-4BAE-80AD-76794592F9B6} = {45542AC8-DC13-4E0F-9780-52FB7C2B194B}
 		{FC34EEC7-E293-4EEE-A58A-5D2F9BECFE6B} = {E0CDF489-CB5F-4E52-A93B-E8260723833A}
 		{654AA8D2-F46B-4A18-8B91-796F73E99E12} = {FC34EEC7-E293-4EEE-A58A-5D2F9BECFE6B}
+		{F5AF71F9-9DEB-4302-A34B-AF73FFC6A3A1} = {5EC57555-34A6-4F20-BCB1-7F4DBC28746E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {98A611E8-28D0-4EF1-9947-71DA2190B828}
