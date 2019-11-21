@@ -104,3 +104,82 @@ You can do several things to solve this:
 * Use WeakReference to hold cached objects. This relies on the garbage collector to decide when to clear the cache, but might not be such a bad idea.
 The GC will promote objects that are still in use to higher generations in order to keep them longer. 
 hat means that objects that are used often will stay longer in cache.
+
+### Threads that Never Terminate
+```
+public class MyClass
+{
+    public MyClass()
+    {
+        Timer timer = new Timer(HandleTick);
+        timer.Change(TimeSpan.FromSeconds(5), TimeSpan.FromSeconds(5));
+    }
+ 
+    private void HandleTick(object state)
+    {
+        // do something
+    }
+```
+
+### Not de-allocating unmanaged memory
+```
+public class SomeClass
+{
+    private IntPtr _buffer;
+ 
+    public SomeClass()
+    {
+        _buffer = Marshal.AllocHGlobal(1000);
+    }
+ 
+    // do stuff without freeing the buffer memory
+ 
+}
+```
+To deal with such issues you can add a Dispose method that frees any unmanaged resources.
+```
+public class SomeClass : IDisposable
+{
+    private IntPtr _buffer;
+ 
+    public SomeClass()
+    {
+        _buffer = Marshal.AllocHGlobal(1000);
+        // do stuff without freeing the buffer memory
+    }
+ 
+    public void Dispose()
+    {
+        Marshal.FreeHGlobal(_buffer);
+    }
+}
+```
+### Adding Dispose without Calling it
+One thing you can do is to use the using statement in C#, also you can add System.Diagnostics.Debug.Assert or a logging framework of
+some sort to finilizer method and find classes which go to finilizer stage.
+```
+public class SomeClass : IDisposable
+{
+    private IntPtr _buffer;
+ 
+    public SomeClass()
+    {
+        _buffer = Marshal.AllocHGlobal(1000);
+        // do stuff without freeing the buffer memory
+    }
+    
+    ~SomeClass() {
+        Debug.Assert(false, "Do not rely on finalization! Use Dispose!");
+        Dispose();
+    }
+    
+    public void Dispose()
+    {
+        Marshal.FreeHGlobal(_buffer);
+        GC.SuppressFinalize(this);
+    }
+}
+```
+
+# Resources
+* [ways-to-cause-memory-leaks-in-dotnet](https://michaelscodingspot.com/ways-to-cause-memory-leaks-in-dotnet/)
