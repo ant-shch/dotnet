@@ -10,7 +10,7 @@ Main memory access latency: 107 cycles
 It's bad behaviour when cache data stored in several CPU and then when on CPU cache was updated,
 we need to reload cache from shared cache (L3) or RAM.
 
-![Cpu caches](https://github.com/khdevnet/performance-optimization/blob/master/cpu/docs/cpu-caches.png)
+![Cpu caches](https://github.com/khdevnet/dotnet/blob/master/performance/cpu/docs/cpu-caches.png)
 
 #### Resources
 * [How L1 and L2 CPU Caches Work](https://www.extremetech.com/extreme/188776-how-l1-and-l2-cpu-caches-work-and-why-theyre-an-essential-part-of-modern-chips)
@@ -25,7 +25,7 @@ Chips have included an additional set of 16 registers, each 128 bits wide. Rathe
 **SIMD** (Single Instruction Multiple Data) operations can be parallelized at the hardware level. That increases the throughput of the vectorized computations, which are common in mathematical, scientific, and graphics apps.
 **SIMD** instructions allow multiple calculations to be carried out simultaneously on a single core by using a register that is multiple times bigger than the data being processed.
 
-![Vectorization calculations](https://github.com/khdevnet/performance-optimization/blob/master/cpu/docs/vector-add-registers.jpg)
+![Vectorization calculations](https://github.com/khdevnet/dotnet/blob/master/performance/cpu/docs/vector-add-registers.jpg)
 
 #### Tips and Tricks
 * Use types from [System.Numerics](https://docs.microsoft.com/en-us/dotnet/api/system.numerics?view=netframework-4.7.2) Namespace
@@ -44,7 +44,7 @@ Chips have included an additional set of 16 registers, each 128 bits wide. Rathe
 **ILP** (Instruction-level parallelism) is a measure of how many of the instructions in a computer program can be executed simultaneously.      
 **Cache line** is the unit of data transfer between the cache and main memory. Typically the cache line is 64 bytes. The processor will read or write an entire cache line when any location in the 64 byte region is read or written. 
 
-![CPU pipelines](https://github.com/khdevnet/performance-optimization/blob/master/cpu/docs/pipeline.jpg)
+![CPU pipelines](https://github.com/khdevnet/dotnet/blob/master/performance/cpu/docs/docs/pipeline.jpg)
 
 #### Resources
 * [Making .NET Applications Even Faster](https://www.pluralsight.com/courses/making-dotnet-applications-even-faster)
@@ -54,7 +54,7 @@ Chips have included an additional set of 16 registers, each 128 bits wide. Rathe
 In programming language, a data object (variable) has 2 properties; its value and the storage location (address). Data alignment means that the address of a data can be evenly divisible by 1, 2, 4, or 8. In other words, data object can have 1-byte, 2-byte, 4-byte, 8-byte alignment or any power of 2.
 If the data is misaligned of 4-byte boundary, CPU has to perform extra work to access the data: load 2 chucks of data, shift out unwanted bytes then combine them together. This process definitely slows down the performance and wastes CPU cycle just to get right data from memory.
 
-![Memory aligment](https://github.com/khdevnet/performance-optimization/blob/master/cpu/docs/memory-align.jpg)
+![Memory aligment](https://github.com/khdevnet/dotnet/blob/master/performance/cpu/docs/memory-align.jpg)
 
 However, the story is a little different for member data in struct, union or class objects. The struct (or union, class) member variables must be aligned to the highest bytes of the size of any member variables to prevent performance penalties. For example, if you have 1 char variable (1-byte) and 1 int variable (4-byte) in a struct, the compiler will pads 3 bytes between these two variables. Therefore, the total size of this struct variable is 8 bytes, instead of 5 bytes. By doing this, the address of this struct data is divisible evenly by 4. This is called structure member alignment. Of course, the size of struct will be grown as a consequence.
 ```
