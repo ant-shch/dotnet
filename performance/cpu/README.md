@@ -44,7 +44,7 @@ Chips have included an additional set of 16 registers, each 128 bits wide. Rathe
 **ILP** (Instruction-level parallelism) is a measure of how many of the instructions in a computer program can be executed simultaneously.      
 **Cache line** is the unit of data transfer between the cache and main memory. Typically the cache line is 64 bytes. The processor will read or write an entire cache line when any location in the 64 byte region is read or written. 
 
-![CPU pipelines](https://github.com/khdevnet/dotnet/blob/master/performance/cpu/docs/docs/pipeline.jpg)
+![CPU pipelines](https://github.com/khdevnet/dotnet/blob/master/performance/cpu/docs/pipeline.jpg)
 
 #### Resources
 * [Making .NET Applications Even Faster](https://www.pluralsight.com/courses/making-dotnet-applications-even-faster)
