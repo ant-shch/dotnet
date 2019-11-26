@@ -64,6 +64,35 @@ public class MyClass
     }
 }
 ```
+### Large objects hanging off a delegate closure
+Variables created outside of an anonymous method, but used within it, are captured in a closure. This allows the delegate to access the value even when the variable goes out of scope. The compiler does the heavy lifting here, creating a class and assigning values to it every time you use an outside variable. For example, once the compiler has worked on the closure in this example:
+```
+public Person WhoReportsTo (List<Employee> data, Person targetEmployee)
+{
+   return data.Find(d => d.ReportsTo == targetEmployee);
+}
+```
+We end up with:
+
+```
+[CompilerGenerated]
+
+private sealed class <>c__DisplayClass4
+{
+ // Fields
+
+ public Person targetEmployee;
+
+ // Methods
+
+ public bool <WhoReportsTo>b__3(Employee d)
+ {
+  return (d.ReportsTo == this.targetEmployee);
+ }
+}
+```
+The anonymous method is enclosed in a dynamic compiler-generated class, which includes a member variable for every external variable. This class, all the enclosed variables, and anything else that is referenced by it will stay alive as long as the delegate is accessible. This extended lifetime can keep objects in memory for far longer than they otherwise would be. Potentially, it can eat up a sizeable chunk of memory and create situations that look like a memory leak, so avoid closures with memory intensive variables.
+
 ### Static Variables
 public class MyClass
 {
