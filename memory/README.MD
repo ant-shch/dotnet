@@ -212,3 +212,4 @@ public class SomeClass : IDisposable
 
 # Resources
 * [ways-to-cause-memory-leaks-in-dotnet](https://michaelscodingspot.com/ways-to-cause-memory-leaks-in-dotnet/)
+* [memory-management-gotchas](https://www.red-gate.com/products/dotnet-development/ants-memory-profiler/learning-memory-management/memory-management-gotchas)
