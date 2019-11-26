@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29020.237
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GC.MemoryLeak.Finalization", "GC.MemoryLeak.Finalization\GC.MemoryLeak.Finalization.csproj", "{9AFE2B7B-0AB2-4141-94F5-437120AE4641}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GC.MemoryLeak.StaticList", "GC.MemoryLeak.StaticList\GC.MemoryLeak.StaticList.csproj", "{73786ADA-2099-403D-9EC5-2149262C1129}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GC.MemoryLeak.DelegateClosure", "GC.MemoryLeak.DelegateClosure\GC.MemoryLeak.DelegateClosure.csproj", "{066750B0-8AC5-4E7F-8850-240EC518D60D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9AFE2B7B-0AB2-4141-94F5-437120AE4641}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AFE2B7B-0AB2-4141-94F5-437120AE4641}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AFE2B7B-0AB2-4141-94F5-437120AE4641}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AFE2B7B-0AB2-4141-94F5-437120AE4641}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73786ADA-2099-403D-9EC5-2149262C1129}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73786ADA-2099-403D-9EC5-2149262C1129}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73786ADA-2099-403D-9EC5-2149262C1129}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73786ADA-2099-403D-9EC5-2149262C1129}.Release|Any CPU.Build.0 = Release|Any CPU
+		{066750B0-8AC5-4E7F-8850-240EC518D60D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{066750B0-8AC5-4E7F-8850-240EC518D60D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{066750B0-8AC5-4E7F-8850-240EC518D60D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{066750B0-8AC5-4E7F-8850-240EC518D60D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9FB97F8F-A5EF-4132-9DB1-AF79E613E318}
+	EndGlobalSection
+EndGlobal
