@@ -94,6 +94,7 @@ private sealed class <>c__DisplayClass4
 The anonymous method is enclosed in a dynamic compiler-generated class, which includes a member variable for every external variable. This class, all the enclosed variables, and anything else that is referenced by it will stay alive as long as the delegate is accessible. This extended lifetime can keep objects in memory for far longer than they otherwise would be. Potentially, it can eat up a sizeable chunk of memory and create situations that look like a memory leak, so avoid closures with memory intensive variables.
 
 ### Static Variables
+```
 public class MyClass
 {
     static List<MyClass> _instances = new List<MyClass>();
@@ -102,7 +103,7 @@ public class MyClass
         _instances.Add(this);
     }
 }
-
+```
 ### Caching functionality
 ```
 public class ProfilePicExtractor
