@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.902
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29020.237
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Highload.WebApi", "Highload.WebApi\Highload.WebApi.csproj", "{55D6BC86-41BC-47BA-934B-A8589B28F417}"
+EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Highload.WebApi.Test", "Highload.WebApi.Test\Highload.WebApi.Test.fsproj", "{332FD39B-9C24-46DF-8281-12D8D25C38DF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{55D6BC86-41BC-47BA-934B-A8589B28F417}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55D6BC86-41BC-47BA-934B-A8589B28F417}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55D6BC86-41BC-47BA-934B-A8589B28F417}.Release|Any CPU.Build.0 = Release|Any CPU
+		{332FD39B-9C24-46DF-8281-12D8D25C38DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{332FD39B-9C24-46DF-8281-12D8D25C38DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{332FD39B-9C24-46DF-8281-12D8D25C38DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{332FD39B-9C24-46DF-8281-12D8D25C38DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
