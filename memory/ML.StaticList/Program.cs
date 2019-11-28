@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace GC.MemoryLeak.StaticList
+namespace ML.StaticList
 {
     class Program
     {

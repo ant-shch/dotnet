@@ -1,6 +1,6 @@
 ﻿using System.Threading;
 
-namespace GC.MemoryLeak.Finalization
+namespace ML.Finalization
 {
     class Program
     {
