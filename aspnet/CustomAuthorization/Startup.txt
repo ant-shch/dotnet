@@ -1,0 +1,8 @@
+            services.RegisterPolicies(
+                claimApplication,
+                options => options.AddPolicy("InternalApiToken", policy => policy.AddRequirements(new[] { new InternalApiTokenRequirement() })
+            ));
+
+            services.AddSingleton<IAuthorizationHandler, InternalApiTokenAuthorizationHandler>();
+
+            services.AddHttpContextAccessor();
