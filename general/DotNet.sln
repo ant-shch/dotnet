@@ -33,6 +33,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PinnedObjects", "PinnedObje
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PinnedObjects", "PinnedObjects\PinnedObjects.csproj", "{F5AF71F9-9DEB-4302-A34B-AF73FFC6A3A1}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReplaceDomainNameWithSpan.Test", "Span\ReplaceDomainNameWithSpan.Test.csproj", "{5ED0ACC8-8474-4ED7-901F-739FF00D4D71}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +73,10 @@ Global
 		{F5AF71F9-9DEB-4302-A34B-AF73FFC6A3A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5AF71F9-9DEB-4302-A34B-AF73FFC6A3A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5AF71F9-9DEB-4302-A34B-AF73FFC6A3A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5ED0ACC8-8474-4ED7-901F-739FF00D4D71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5ED0ACC8-8474-4ED7-901F-739FF00D4D71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5ED0ACC8-8474-4ED7-901F-739FF00D4D71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5ED0ACC8-8474-4ED7-901F-739FF00D4D71}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
