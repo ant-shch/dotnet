@@ -23,9 +23,10 @@ namespace CopyReferenceToStack
         static void Main(string[] args)
         {
             var animal = Animal.Info;
+            // override reference in the variable that stores in the stack, keep the reference in the Animal.Info without change
             animal = new AnimalInfo(5);
-
-            Console.WriteLine(animal.Age);
+            Console.WriteLine(Animal.Info.Age); // 10
+            Console.WriteLine(animal.Age); // 5
 
             Console.Read();
         }
